@@ -19,6 +19,7 @@ Current implementation includes:
 - fail-closed verification
 - URL/redirect safety controls
 - provisional `/app/app.py` grader adapter
+- optional keyless public-web discovery in the demo path
 - isolated demo UI
 - provisional AMD ROCm container baseline
 
@@ -26,7 +27,7 @@ Current implementation includes:
 
 Current local functional validation:
 
-- **34 tests passed**
+- **37 tests passed**
 - Python compileall: **PASS**
 - offline held-out harness: **9/9 PASS**
 - exact-case accuracy: **1.0**
