@@ -17,6 +17,8 @@ Current implementation includes:
 - price/date/version/contact/hours/count/person/spec retrieval
 - provenance and SHA-256 snapshot evidence
 - fail-closed verification
+- prompt-injection decoy rejection in page evidence
+- bounded pagination to page 2+
 - URL/redirect safety controls
 - provisional `/app/app.py` grader adapter
 - optional keyless public-web discovery in the demo path
@@ -27,7 +29,7 @@ Current implementation includes:
 
 Current local functional validation:
 
-- **37 tests passed**
+- **40 tests passed**
 - Python compileall: **PASS**
 - offline held-out harness: **9/9 PASS**
 - exact-case accuracy: **1.0**
