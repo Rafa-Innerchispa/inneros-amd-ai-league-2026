@@ -1,43 +1,42 @@
 # Match 4: Intelligent Web Information Retrieval
 
-- **Status:** ACTIVE DEVELOPMENT
+- **Status:** IMPLEMENTATION COMPLETE · PLATFORM SUBMISSION RECOVERY PENDING
 - **Human Task ID:** `MATCH4-WEB-RETRIEVAL`
 - **Canonical Repository:** [Rafa-Innerchispa/amd-academy-mc4-web-retrieval](https://github.com/Rafa-Innerchispa/amd-academy-mc4-web-retrieval)
-- **Development Branch:** `chatgpt/mc4-core-20261019`
-- **Draft PR:** [#2](https://github.com/Rafa-Innerchispa/amd-academy-mc4-web-retrieval/pull/2)
+- **Final Branch:** `main`
+- **Final Commit:** `0780101a8a4098063b7fbc743430b6e23a244019`
 
-## Capability under validation
+## Capability
 
-A bounded, evidence-first web retrieval agent that accepts a natural-language request, navigates relevant pages, extracts the specific requested value, verifies it against the source, and fails closed when the evidence is insufficient.
+A bounded, evidence-first web retrieval agent that accepts a natural-language request, navigates relevant pages, extracts the specific requested value, verifies it against the source, and fails closed when evidence is insufficient.
 
-Current implementation includes:
+## Verified engineering evidence
 
-- URL + anchor-aware bounded navigation
-- exact-value extraction from text, HTML tables and JSON-LD
-- price/date/version/contact/hours/count/person/spec retrieval
-- provenance and SHA-256 snapshot evidence
-- fail-closed verification
-- prompt-injection decoy rejection in page evidence
-- bounded pagination to page 2+
-- URL/redirect safety controls
-- provisional `/app/app.py` grader adapter
-- optional keyless public-web discovery in the demo path
-- isolated demo UI
-- provisional AMD ROCm container baseline
+Completed before the original Match 4 deadline:
 
-## Development evidence
+- **74/74 tests PASS**
+- core benchmark: **16/16 PASS**
+- adversarial benchmark: **30/30 PASS**
+- physical AMD Radeon AI PRO R9700 / `gfx1201`
+- production ROCm 10.1 runtime verified
+- ROCm 10.1 engineering container build: **PASS**
+- `--network none` smoke: **PASS**
+- agent import inside container: **PASS**
+- public GitHub repository available
 
-Current local functional validation:
+These are engineering validation results, not an official hidden-set AMD grader score.
 
-- **40 tests passed**
-- Python compileall: **PASS**
-- offline held-out harness: **9/9 PASS**
-- exact-case accuracy: **1.0**
+## LabLab platform state
 
-These are local development results, not official Match 4 grader results and not AMD GPU performance measurements.
+The original Match 4 submission/editing flow was inaccessible during the final submission window. A support escalation was sent to LabLab on 2026-10-31 with the completed public repository and evidence.
 
-## Promotion gate
+As of 2026-11-09:
 
-This Match remains **ACTIVE DEVELOPMENT**, not VERIFIED.
+- LabLab has migrated its public home from `lablab.ai` to `lablab.build`.
+- The new AMD AI League page still incorrectly shows Match 4 as **Live** and Match 5 as **Coming soon**, despite the original schedule.
+- No reply has been received to the Match 4 support escalation.
+- The official FAQ states that closed Matches remain playable for points even after prize eligibility ends.
 
-Promotion requires the official Match 4 contract/starter kit, official sample/selfcheck pass, AMD physical container validation, public image + anonymous pull/re-run, immutable digest, and a confirmed LabLab submission route.
+## Current action
+
+Treat Match 4 as **technically complete** and preserve all evidence. The remaining action is platform-side: attach/accept the completed submission for points or reopen the authenticated submission route.
