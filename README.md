@@ -23,13 +23,13 @@ flowchart TB
 
     ROCM --> M2["Match 2<br/>Vision / OCR"]
     ROCM --> M3["Match 3<br/>Multimodal RAG"]
-    ROCM --> M4["Match 4<br/>Web Retrieval<br/>(active development)"]
-    ROCM --> M5["Match 5<br/>Code Repository Repair<br/>(upcoming)"]
+    ROCM --> M4["Match 4<br/>Web Retrieval<br/>(implementation complete)"]
+    ROCM --> M5["Match 5<br/>Code Repository Repair<br/>(awaiting official contract)"]
     ROCM --> M6["Match 6<br/>TBD by League<br/>(upcoming)"]
 
     M2 -. validated capability .-> IOS["InnerOS<br/>governance • evidence • agents • workflows"]
     M3 -. validated capability .-> IOS
-    M4 -. future graduation .-> IOS
+    M4 -. validated capability .-> IOS
     M5 -. future graduation .-> IOS
     M6 -. future graduation .-> IOS
 ```
@@ -43,8 +43,8 @@ flowchart TB
 | **Match 1** | AMD Developer Program / Academy onboarding | **Learning in progress** | [Match 1 notes](matches/MATCH_01_ONBOARDING.md) |
 | **Match 2** | Vision + OCR / ChispaVision | **VERIFIED** | [infralens-ocr-amd](https://github.com/Rafa-Innerchispa/infralens-ocr-amd) |
 | **Match 3** | Grounded Multimodal RAG | **VERIFIED · ready for LabLab points submission** | [amd-academy-mc3-rag](https://github.com/Rafa-Innerchispa/amd-academy-mc3-rag) |
-| **Match 4** | Intelligent Web Information Retrieval | **ACTIVE DEVELOPMENT** | Challenge workspace exists; not part of the current verified submission |
-| **Match 5** | Code Repository Repair | **UPCOMING** | [Match 5 placeholder](matches/MATCH_05_CODE_REPAIR.md) |
+| **Match 4** | Intelligent Web Information Retrieval | **IMPLEMENTATION COMPLETE · platform submission recovery pending** | [amd-academy-mc4-web-retrieval](https://github.com/Rafa-Innerchispa/amd-academy-mc4-web-retrieval) |
+| **Match 5** | Code Repository Repair | **OFFICIAL CONTRACT NOT PUBLISHED** | [Match 5 preparation](matches/MATCH_05_CODE_REPAIR.md) |
 | **Match 6** | Final League challenge | **UPCOMING** | [Match 6 placeholder](matches/MATCH_06_ADAPTIVE_AI.md) |
 
 ---
